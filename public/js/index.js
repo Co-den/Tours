@@ -3,7 +3,6 @@ import "@babel/polyfill";
 import { displayMap } from "./mapbox";
 import { login, logout, signup } from "./login";
 import { updateSettings } from "./updateSettings";
-import { bookTour } from "./stripe";
 import { showAlert } from "./alerts";
 
 // DOM ELEMENTS
@@ -80,15 +79,6 @@ if (userPasswordForm)
     document.getElementById("password-confirm").value = "";
   });
 
-  if (bookBtn) {
-    console.log("Attaching click event listener...");
-    bookBtn.addEventListener("click", (e) => {
-      e.target.textContent = "Processing...";
-      const tourId = e.target.dataset.tourId;
-      console.log("Tour ID:", tourId);
-      bookTour(tourId);
-    });
-  }
   
 
 const alertMessage = document.querySelector("body").dataset.alert;
