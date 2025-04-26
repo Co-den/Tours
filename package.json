@@ -1,0 +1,74 @@
+{
+  "name": "natour",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@googlemaps/js-api-loader": "^1.16.8",
+    "@paystack/inline-js": "^2.22.1",
+    "axios": "^1.7.9",
+    "bcrypt": "^5.1.1",
+    "compression": "^1.8.0",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dompurify": "^3.2.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "express-validator": "^7.2.0",
+    "helmet": "^8.0.0",
+    "hpp": "^0.2.3",
+    "html-to-text": "^9.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "latest": "^0.2.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.16",
+    "path": "^0.12.7",
+    "pug": "^3.0.3",
+    "ses": "^1.11.0",
+    "sharp": "^0.33.5",
+    "slug": "^10.0.0",
+    "slugify": "^1.6.6",
+    "stripe": "^17.5.0",
+    "superagent": "^10.1.1",
+    "validator": "^13.12.0",
+    "web-vitals": "^4.2.4",
+    "xss": "^1.0.15",
+    "xss-clean": "^0.1.4"
+  },
+  "scripts": {
+    "start": "nodemon server.js",
+    "start_prod": "SET NODE_ENV = production&&nodemon server.js",
+    "debug": "ndb server.js",
+    "watch:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "build:js": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/morgan": "^1.9.9",
+    "nodemon": "^3.1.9",
+    "parcel-bundler": "^1.12.5"
+  }
+}
