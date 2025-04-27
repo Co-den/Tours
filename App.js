@@ -52,7 +52,7 @@ app.use(
       defaultSrc: ["'self'"],
       scriptSrc: ["'self'", "https://js.stripe.com"],
       frameSrc: ["'self'", "https://js.stripe.com"],
-      connectSrc: ["'self'", "ws://localhost:62196", "http://127.0.0.1:3000","https://api.stripe.com"],
+      connectSrc: ["'self'","http://127.0.0.1:3000","https://api.stripe.com"],
       styleSrc: ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"],
       fontSrc: ["'self'", "https://fonts.gstatic.com"],
     },
