@@ -5,7 +5,7 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "server.js",
+  "main": "index.js",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@googlemaps/js-api-loader": "^1.16.8",
@@ -52,9 +52,9 @@
     "dev": "nodemon server.js",
     "start_prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
-    "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js --out-file bundle.js",
-    "build:js": "npx parcel build ./public/js/index.js --dist-dir ./public/js"
-},
+    "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js",
+    "build:js": "parcel build ./public/js/index.js --dist-dir ./public/js --no-content-hash"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
