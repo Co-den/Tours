@@ -53,7 +53,7 @@
     "start_prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js",
-    "build:js": "parcel build ./public/js/index.js --dist-dir ./public/js --no-content-hash"
+    "build:js": "parcel build ./public/js/index.js --dist-dir ./public/js --no-content-hash --no-cache"
   },
   "browserslist": {
     "production": [
